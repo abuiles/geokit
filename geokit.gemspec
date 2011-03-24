@@ -3,15 +3,15 @@ $:.push File.expand_path("../lib", __FILE__)
 require "geokit/version"
 
 Gem::Specification.new do |s|
-  s.name        = "steveh-geokit"
+  s.name        = "abuiles-geokit"
   s.version     = Geokit::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Andre Lewis", "Bill Eisenhauer", "Steve Hoeksema"]
-  s.email       = ["andre@earthcode.com", "bill_eisenhauer@yahoo.com", "steve@seven.net.nz"]
-  s.homepage    = "https://github.com/steveh/geokit"
+  s.authors     = ["Andre Lewis", "Bill Eisenhauer", "Steve Hoeksema", "Adolfo Builes"]
+  s.email       = ["andre@earthcode.com", "bill_eisenhauer@yahoo.com", "steve@seven.net.nz", "steve@seven.net.nz"]
+  s.homepage    = "https://github.com/abuiles/geokit"
   s.summary     = "Geokit provides geocoding and distance/heading calculations."
 
-  s.rubyforge_project = "steveh-geokit"
+  s.rubyforge_project = "abuiles-geokit"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
