@@ -51,7 +51,7 @@ module Geokit
           url = "#{ENDPOINT}?" + params.to_query
           res = self.call_geocoder_service(url)
           return GeoLoc.new if !res.is_a?(Net::HTTPSuccess)
-          xml = res.body
+          xml = res.body.force_encoding('utf-8')
           logger.debug "Google geocoding. Address: #{address}. Result: #{xml}"
           return self.xml2GeoLoc(xml, address)
         end
